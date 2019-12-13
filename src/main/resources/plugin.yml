@@ -1,10 +1,10 @@
 name: RandomCoords
 main: com.jolbol1.RandomCoordinates.RandomCoords
 #version: ${project.version}-${REPO}-${BRANCH}-b${BUILD_NUMBER}-${buildTimestamp}
-version: 2.3.0
+version: 2.4.0
 website: http://bukkit.org
 author: Jolbol1
-authors: [PHENOMICAL]
+authors: [Raspen0, PHENOMICAL]
 api-version: 1.14
 softdepend: [Factions, MassiveCore, WorldEdit, WorldBorder, Vault, WorldGuard, Essentials, Towny, Residence, RedProtect, Kingdoms, GriefPrevention, PlotSquared]
 description: >

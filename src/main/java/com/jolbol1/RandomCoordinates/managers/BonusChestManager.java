@@ -168,7 +168,7 @@ public class BonusChestManager {
 
                 if (itemData.containsKey("FireworkEffect")) {
                     Material firework;
-                    if(RandomCoords.getServerVersion() >= 13){
+                    if(RandomCoords.getPlugin().getServerVersion() >= 13){
                         firework = Material.valueOf("FIREWORK_ROCKET");
                     } else {
                         firework = Material.valueOf("FIREWORK");
@@ -184,7 +184,7 @@ public class BonusChestManager {
 
                 if (itemData.containsKey("SkullOwner")) {
                     Material skull;
-                    if(RandomCoords.getServerVersion() >= 13){
+                    if(RandomCoords.getPlugin().getServerVersion() >= 13){
                         skull = Material.valueOf("PLAYER_HEAD");
                     } else {
                         skull = Material.valueOf("SKULL_ITEM");
@@ -410,7 +410,7 @@ public class BonusChestManager {
 
         Material firework;
         Material skull;
-        if(RandomCoords.getServerVersion() >= 13){
+        if(RandomCoords.getPlugin().getServerVersion() >= 13){
             firework = Material.valueOf("FIREWORK_ROCKET");
             skull = Material.valueOf("PLAYER_HEAD");
         } else {

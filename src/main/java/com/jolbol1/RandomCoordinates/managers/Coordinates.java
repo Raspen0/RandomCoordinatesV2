@@ -152,7 +152,7 @@ public class Coordinates {
          * This is to avoid .getHighestBlockAt returning the bedrock on top of the nether. (Will take longer to grab coordinate)
          */
         Biome netherBiome;
-        if(RandomCoords.getServerVersion() >= 13){
+        if(RandomCoords.getPlugin().getServerVersion() >= 13){
             netherBiome = Biome.valueOf("NETHER");
         } else {
             netherBiome = Biome.valueOf("HELL");
@@ -412,7 +412,7 @@ public class Coordinates {
          *This checks if the nether Y coord is left unchanged, thus bad Y coord. Seldom use.
          */
         Biome netherBione;
-        if(RandomCoords.getServerVersion() >= 13){
+        if(RandomCoords.getPlugin().getServerVersion() >= 13){
             netherBione = Biome.valueOf("NETHER");
         } else {
             netherBione = Biome.valueOf("HELL");
@@ -1207,7 +1207,7 @@ public class Coordinates {
          */
         Biome netherBiome;
         Biome endBiome;
-        if(RandomCoords.getServerVersion() >= 13){
+        if(RandomCoords.getPlugin().getServerVersion() >= 13){
             netherBiome = Biome.valueOf("NETHER");
             endBiome = Biome.valueOf("THE_END");
         } else {

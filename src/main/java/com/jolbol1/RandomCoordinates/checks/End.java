@@ -51,7 +51,7 @@ public class End {
         Material endStone;
         Material endBricks;
 
-        if(RandomCoords.getServerVersion() >= 13) {
+        if(RandomCoords.getPlugin().getServerVersion() >= 13) {
             endStone = Material.valueOf("END_STONE");
             endBricks = Material.valueOf("END_STONE_BRICKS");
         } else {

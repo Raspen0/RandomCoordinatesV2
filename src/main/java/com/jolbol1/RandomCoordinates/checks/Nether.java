@@ -61,7 +61,7 @@ public class Nether {
                     if (!(b.getType() == Material.BEDROCK || b.getType() == Material.AIR || b.getType() == Material.LAVA || b1.getType() != Material.AIR || b2.getType() != Material.AIR)) {
                         return y;
                     }
-                    if(RandomCoords.getServerVersion() < 13){
+                    if(RandomCoords.getPlugin().getServerVersion() < 13){
                         if(!b.getType().toString().equals("STATIONARY_LAVA")){
                             return y;
                         }

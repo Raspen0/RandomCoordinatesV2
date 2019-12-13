@@ -337,7 +337,7 @@ public class CoordinatesManager {
 				            
 				            //TODO: Is double implemented
                             Biome endBiome;
-				            if(RandomCoords.getServerVersion() >= 13){
+				            if(RandomCoords.getPlugin().getServerVersion() >= 13){
 				                endBiome = Biome.valueOf("THE_END");
                             } else {
 				                endBiome = Biome.valueOf("SKY");
@@ -442,7 +442,7 @@ public class CoordinatesManager {
             safeLocation = getRandomWarp(player, world, coordType);
 
             Biome endBiome;
-            if(RandomCoords.getServerVersion() >= 13){
+            if(RandomCoords.getPlugin().getServerVersion() >= 13){
                 endBiome = Biome.valueOf("THE_END");
             } else {
                 endBiome = Biome.valueOf("SKY");
@@ -803,7 +803,7 @@ public class CoordinatesManager {
      */
     private double getSafeY(Location location) {
         Biome netherBiome;
-    	if(RandomCoords.getServerVersion() >= 13){
+    	if(RandomCoords.getPlugin().getServerVersion() >= 13){
             netherBiome = Biome.valueOf("NETHER");
         } else {
             netherBiome = Biome.valueOf("HELL");

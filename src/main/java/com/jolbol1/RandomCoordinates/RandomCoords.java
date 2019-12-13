@@ -100,6 +100,8 @@ public class RandomCoords extends JavaPlugin {
 	public int successTeleports;
 	public int failedTeleports;
 
+	public int serverVersion;
+
 	public int onJoin;
 	public int signTeleport;
 	public int commandTeleport;
@@ -125,8 +127,8 @@ public class RandomCoords extends JavaPlugin {
 	 * Example: For 1.12.2 it will return 12.
 	 * @return The server version number.
 	 */
-	public static int getServerVersion(){
-		return Integer.parseInt(Bukkit.getBukkitVersion().split("\\.")[1]);
+	public int getServerVersion(){
+		return serverVersion;
 	}
 
 	/**
@@ -136,6 +138,7 @@ public class RandomCoords extends JavaPlugin {
 		// Setup bStats Metrics
 		logger = Bukkit.getServer().getLogger();
 		plugin = this;
+		serverVersion = Integer.parseInt(Bukkit.getBukkitVersion().split("\\.")[1].split("-")[0]);
 		final PluginManager pm = getServer().getPluginManager();
 
 		final PluginDescriptionFile pdf = getDescription();

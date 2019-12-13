@@ -127,7 +127,7 @@ public class BlockPortal implements Listener {
      * Checks if the material that's causing the physics event is a liquid or a portal.
      */
     private boolean checkMaterial(Material mat){
-        if(RandomCoords.getServerVersion() >= 13){
+        if(RandomCoords.getPlugin().getServerVersion() >= 13){
             switch (mat.toString()){
                 case "WATER":
                 case "LAVA":

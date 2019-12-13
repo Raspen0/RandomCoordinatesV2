@@ -92,7 +92,7 @@ public class SignClick implements Listener {
         if(block.getState() instanceof Sign){
             return true;
         }
-        if(RandomCoords.getServerVersion() < 13){
+        if(RandomCoords.getPlugin().getServerVersion() < 13){
             return block.getType().toString().equals("SIGN_POST");
         }
         return false;

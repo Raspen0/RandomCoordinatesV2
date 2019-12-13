@@ -66,7 +66,7 @@ public class WandGive implements CommandInterface {
      */
     public ItemStack wand() {
         Material wandMaterial;
-        if(RandomCoords.getServerVersion() >= 13) {
+        if(RandomCoords.getPlugin().getServerVersion() >= 13) {
             wandMaterial = Material.valueOf("GOLDEN_AXE");
         } else {
             wandMaterial = Material.valueOf("GOLD_AXE");
