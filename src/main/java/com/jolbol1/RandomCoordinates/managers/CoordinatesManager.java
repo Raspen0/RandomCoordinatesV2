@@ -802,13 +802,7 @@ public class CoordinatesManager {
      * @return Safe y value, plus a buffer. (2.5 = max before fall damage)
      */
     private double getSafeY(Location location) {
-        Biome netherBiome;
-    	if(RandomCoords.getPlugin().getServerVersion() >= 13){
-            netherBiome = Biome.valueOf("NETHER");
-        } else {
-            netherBiome = Biome.valueOf("HELL");
-        }
-        if(location.getWorld().getBiome(location.getBlockX(), location.getBlockZ()) == netherBiome) {
+        if(location.getWorld().getEnvironment() == World.Environment.NETHER){
             return (nether.getSafeYNether(location));
         }
         if(RandomCoords.getPlugin().skyBlockSave.getStringList("SkyBlockWorlds").contains(location.getWorld().getName())) {
